@@ -26,17 +26,18 @@
 CREATE TABLE `product` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
+  `sn` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
 
-INSERT INTO `product` (`id`, `name`)
+INSERT INTO `product` (`id`, `name`, `sn`)
 VALUES
-	(1,'test product'),
-	(2,'new product'),
-	(3,'product 1');
+	(1,'test product','12Ad'),
+	(2,'new product','15gh'),
+	(3,'product 1','19huzt');
 
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
