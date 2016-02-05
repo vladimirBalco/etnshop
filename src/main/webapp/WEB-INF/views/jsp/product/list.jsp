@@ -13,7 +13,7 @@
 
 <div class="container">
 	<h2>Products</h2>
-	<h3><a href="/etnshop/product/newProduct">New Product</a></h3>
+	<a class="btn btn-primary btn-lg" href="/etnshop/product/newProduct" role="button">New Product</a>	
 	<table class="table">
 		<thead>
 			<tr>
@@ -30,9 +30,8 @@
 					<td>${product.name}</td>
 					<td>${product.sn}</td>
 					<td>
-                        <a href="/editContact?id=${product.id}">Edit</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="/deleteContact?id=${product.id}">Delete</a>
+						<a class="btn btn-primary btn-lg" href="/etnshop/product/editProduct?id=${product.id}" role="button">Edit</a>
+                        <a class="btn btn-primary btn-lg" href="/etnshop/product/deleteProduct?id=${product.id}" role="button">Delete</a>                        
                     </td>
 				</tr>	
 			</c:forEach>
@@ -44,10 +43,8 @@
 	</footer>
 </div>
 
-<spring:url value="/resources/core/css/bootstrap.min.js"
-	var="bootstrapJs" />
-
-<script src="${bootstrapJs}"></script>
+<spring:url value="/resources/core/js/bootstrap.min.js" var="bootstrapJs" />
 <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="${bootstrapJs}"></script>
 </body>
 </html>

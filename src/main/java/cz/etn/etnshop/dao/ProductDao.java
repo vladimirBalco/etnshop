@@ -17,4 +17,9 @@ public interface ProductDao {
 
 	@Transactional(readOnly = false)
     void updateProduct(Product product);
+	
+	//Added for update product possibility
+	@Transactional(readOnly = true)
+	Product getProduct(int productId);
+	
 }

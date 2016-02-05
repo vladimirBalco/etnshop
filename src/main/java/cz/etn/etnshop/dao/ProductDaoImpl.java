@@ -34,6 +34,13 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
 		getSession().update(product);
 		
 	}
+
+	//Added for update product possibility
+	@Override
+	public Product getProduct(int productId) {
+		return (Product) getSession().get(Product.class, productId);
+		
+	}
 	
 
 }
