@@ -7,7 +7,7 @@ Prerequisites:
  
 Basic Steps:
 
-1. Create database in your Mysql database. 
+1. Create database in your Mysql server. 
 2. Create table from the file etnshop.sql. 
 3. Go to file application.properties and change the name of the database, username and password according to settings in your mysql database
 4. From command line go to path where is your etnshop unpacked
