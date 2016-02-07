@@ -16,7 +16,7 @@ import org.hibernate.search.Search;
 public class ProductDaoImpl extends AbstractDao implements ProductDao {
 
 	@Override
-	public void saveProduct(Product product) {
+	public void saveProduct(Product product) {		
 		persist(product);
 	}
 
