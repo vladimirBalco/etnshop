@@ -3,6 +3,7 @@ Prerequisites:
 
 1. mysql
 2. gradle
+3. java
  
 Basic Steps:
 
