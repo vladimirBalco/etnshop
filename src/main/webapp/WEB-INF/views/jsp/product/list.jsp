@@ -10,10 +10,11 @@
 <link href="${bootstrapCss}" rel="stylesheet" />
 <link href="${coreCss}" rel="stylesheet" />
 </head>
-
+<body>
 <div class="container">
 	<h2>Products</h2>
-	<a class="btn btn-primary btn-lg" href="/etnshop/product/newProduct" role="button">New Product</a>	
+	<a class="btn btn-primary btn-lg" href="/etnshop/product/newProduct" role="button">New Product</a>
+	<a class="btn btn-primary btn-lg" href="/etnshop/product/search" role="button">Search for product</a>	
 	<table class="table">
 		<thead>
 			<tr>

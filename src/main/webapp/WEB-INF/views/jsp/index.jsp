@@ -10,7 +10,7 @@
 <link href="${bootstrapCss}" rel="stylesheet" />
 <link href="${coreCss}" rel="stylesheet" />
 </head>
-
+<body>
 <div class="container">
 	<p>Welcome!<p>
 			<a class="btn btn-primary btn-lg" href="/etnshop/product/list" role="button">Products</a>
@@ -20,6 +20,5 @@
 <spring:url value="/resources/core/js/bootstrap.min.js" var="bootstrapJs" />
 <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="${bootstrapJs}"></script>
-
 </body>
 </html>

@@ -37,7 +37,10 @@
             <props>
                 <prop key="hibernate.dialect">${hibernate.dialect}</prop>
                 <prop key="hibernate.show_sql">${hibernate.show_sql:false}</prop>
-                <prop key="hibernate.format_sql">${hibernate.format_sql:false}</prop>
+                <prop key="hibernate.format_sql">${hibernate.format_sql:false}</prop>      
+                <!-- Added for fulltext search capability -->          
+				<prop key="hibernate.search.default.directory_provider">${hibernate.search.default.directory_provider}</prop>
+				<prop key="hibernate.search.default.indexBase">${hibernate.search.default.indexBase}</prop>
             </props>
         </property>       
     </bean>
