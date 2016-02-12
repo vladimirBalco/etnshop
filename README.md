@@ -10,8 +10,9 @@ Basic Steps:
 1. Create database in your Mysql server. 
 2. Create table from the file etnshop.sql. 
 3. Go to file application.properties and change the name of the database, username and password according to settings in your mysql server
-4. From command line go to path where is your etnshop unpacked
-5. Write 'gradle jettyRun' in command line and hit enter
+4. Create folder C:/Users/indexes and make sure that user has all privileges (write, read etc)
+5. From command line go to path where is your etnshop unpacked
+6. Write 'gradle jettyRun' in command line and hit enter
 
 First start:
 
